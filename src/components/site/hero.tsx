@@ -49,7 +49,7 @@ export function Hero() {
             sizes="(min-width: 1280px) 512px, (min-width: 1024px) 360px, (min-width: 768px) 320px, 256px"
             loading="eager"
             fetchPriority="high"
-            className="relative z-10 h-[min(20rem,40svh)] w-auto animate-rise-up [animation-delay:150ms] motion-reduce:animate-none md:h-auto md:w-80 lg:absolute lg:inset-x-0 lg:top-auto lg:bottom-0 lg:mx-auto lg:h-[min(72svh,30rem)] lg:w-auto xl:h-[min(72svh,38rem)]"
+            className="relative z-10 h-[min(20rem,40svh)] w-auto animate-rise-up [animation-delay:150ms] motion-reduce:animate-none md:h-auto md:w-80 lg:absolute lg:inset-x-0 lg:top-auto lg:bottom-0 lg:mx-auto lg:h-[min(78svh,32rem)] lg:w-auto xl:h-[min(78svh,40rem)] 2xl:h-[min(80svh,42rem)]"
           />
         </div>
 
