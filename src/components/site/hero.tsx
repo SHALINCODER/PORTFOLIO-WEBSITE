@@ -24,7 +24,7 @@ export function Hero() {
       <div
         className={cn(
           container,
-          'grid flex-grow grid-cols-1 items-center gap-5 py-3 md:gap-8 md:py-6 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.35fr)_minmax(0,0.9fr)] lg:gap-0 lg:py-0 2xl:max-w-[110rem] 2xl:grid-cols-[minmax(0,0.9fr)_minmax(0,1.8fr)_minmax(0,0.9fr)]'
+          'grid flex-grow grid-cols-1 items-center gap-5 py-3 md:gap-8 md:py-6 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.35fr)_minmax(0,0.9fr)] lg:gap-0 lg:py-0 2xl:max-w-[125rem] 2xl:grid-cols-[minmax(0,0.9fr)_minmax(0,1.8fr)_minmax(0,0.9fr)]'
         )}
       >
         <div className="z-20 order-2 flex animate-fade-up justify-center text-center [animation-delay:400ms] motion-reduce:animate-none lg:order-none lg:col-start-3 lg:row-start-1 lg:justify-start lg:pl-8 lg:text-left">
@@ -71,7 +71,7 @@ export function Hero() {
       <div
         className={cn(
           container,
-          'z-30 flex animate-fade-up items-center justify-between pt-4 [animation-delay:500ms] motion-reduce:animate-none 2xl:max-w-[110rem]'
+          'z-30 flex animate-fade-up items-center justify-between pt-4 [animation-delay:500ms] motion-reduce:animate-none 2xl:max-w-[125rem]'
         )}
       >
         <SocialLinks className="-ml-3 lg:-ml-2" />
