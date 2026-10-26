@@ -24,7 +24,7 @@ export function Hero() {
       <div
         className={cn(
           container,
-          'grid flex-grow grid-cols-1 items-center gap-5 py-3 md:gap-8 md:py-6 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.35fr)_minmax(0,0.9fr)] lg:gap-0 lg:py-0 2xl:max-w-[110rem] 2xl:grid-cols-[minmax(0,0.9fr)_minmax(0,1.5fr)_minmax(0,0.9fr)]'
+          'grid flex-grow grid-cols-1 items-center gap-5 py-3 md:gap-8 md:py-6 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.35fr)_minmax(0,0.9fr)] lg:gap-0 lg:py-0 2xl:max-w-[110rem] 2xl:grid-cols-[minmax(0,0.9fr)_minmax(0,1.8fr)_minmax(0,0.9fr)]'
         )}
       >
         <div className="z-20 order-2 flex animate-fade-up justify-center text-center [animation-delay:400ms] motion-reduce:animate-none lg:order-none lg:col-start-3 lg:row-start-1 lg:justify-start lg:pl-8 lg:text-left">
@@ -39,17 +39,17 @@ export function Hero() {
         <div className="relative order-1 flex h-full items-center justify-center lg:static lg:order-none lg:col-start-2 lg:row-start-1">
           <div
             aria-hidden="true"
-            className="absolute z-0 h-[min(300px,38svh)] w-[min(300px,38svh)] animate-pop-in rounded-full bg-yellow-400/90 motion-reduce:animate-none md:h-[400px] md:w-[400px] lg:h-[min(360px,55svh)] lg:w-[min(360px,55svh)] xl:h-[min(500px,65svh)] xl:w-[min(500px,65svh)] 2xl:h-[min(620px,70svh)] 2xl:w-[min(620px,70svh)]"
+            className="absolute z-0 h-[min(300px,38svh)] w-[min(300px,38svh)] animate-pop-in rounded-full bg-yellow-400/90 motion-reduce:animate-none md:h-[400px] md:w-[400px] lg:h-[min(360px,55svh)] lg:w-[min(360px,55svh)] xl:h-[min(500px,65svh)] xl:w-[min(500px,65svh)] 2xl:h-[min(900px,84svh)] 2xl:w-[min(900px,84svh)]"
           />
           <Image
             src={site.portrait}
             alt={`Portrait of ${site.name}`}
             width={1122}
             height={1402}
-            sizes="(min-width: 1536px) 768px, (min-width: 1280px) 563px, (min-width: 1024px) 410px, (min-width: 768px) 320px, 256px"
+            sizes="(min-width: 1536px) 871px, (min-width: 1280px) 563px, (min-width: 1024px) 410px, (min-width: 768px) 320px, 256px"
             loading="eager"
             fetchPriority="high"
-            className="relative z-10 h-[min(20rem,40svh)] w-auto animate-rise-up [animation-delay:150ms] motion-reduce:animate-none md:h-auto md:w-80 lg:absolute lg:inset-x-0 lg:top-auto lg:bottom-0 lg:mx-auto lg:h-[min(78svh,32rem)] lg:w-auto xl:h-[min(86svh,44rem)] 2xl:h-[min(92svh,60rem)]"
+            className="relative z-10 h-[min(20rem,40svh)] w-auto animate-rise-up [animation-delay:150ms] motion-reduce:animate-none md:h-auto md:w-80 lg:absolute lg:inset-x-0 lg:top-auto lg:bottom-0 lg:mx-auto lg:h-[min(78svh,32rem)] lg:w-auto xl:h-[min(86svh,44rem)] 2xl:h-[min(92svh,68rem)]"
           />
         </div>
 
