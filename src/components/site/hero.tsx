@@ -13,7 +13,7 @@ export function Hero() {
     <section
       id="home"
       aria-labelledby="hero-heading"
-      className="relative flex min-h-[calc(100svh-4rem)] w-full flex-col items-center justify-between overflow-x-clip pb-6 pt-5 md:pb-10 md:pt-8"
+      className="relative flex min-h-[calc(100svh-4rem)] w-full flex-col items-center justify-between overflow-hidden pb-6 pt-5 md:pb-10 md:pt-8"
     >
       {/*
         Layout: stacked below lg; three columns from lg. From lg up the portrait is positioned
@@ -49,7 +49,7 @@ export function Hero() {
             sizes="(min-width: 1536px) 871px, (min-width: 1280px) 563px, (min-width: 1024px) 410px, (min-width: 768px) 320px, 256px"
             loading="eager"
             fetchPriority="high"
-            className="relative z-10 mb-4 h-[min(20rem,40svh)] w-auto animate-rise-up [animation-delay:150ms] motion-reduce:animate-none md:h-auto md:w-80 lg:absolute lg:inset-x-0 lg:top-auto lg:bottom-0 lg:mx-auto lg:mb-6 lg:h-[min(78svh,32rem)] lg:w-auto xl:h-[min(86svh,44rem)] 2xl:h-[min(92svh,68rem)]"
+            className="relative z-10 h-[min(20rem,40svh)] w-auto animate-rise-up [animation-delay:150ms] motion-reduce:animate-none md:h-auto md:w-80 lg:absolute lg:inset-x-0 lg:top-auto lg:bottom-0 lg:mx-auto lg:h-[min(78svh,32rem)] lg:w-auto xl:h-[min(86svh,44rem)] 2xl:h-[min(92svh,68rem)]"
           />
         </div>
 
