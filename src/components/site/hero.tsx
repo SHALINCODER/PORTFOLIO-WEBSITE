@@ -46,10 +46,10 @@ export function Hero() {
             alt={`Portrait of ${site.name}`}
             width={1122}
             height={1402}
-            sizes="(min-width: 1280px) 512px, (min-width: 1024px) 360px, (min-width: 768px) 320px, 256px"
+            sizes="(min-width: 1536px) 640px, (min-width: 1280px) 563px, (min-width: 1024px) 410px, (min-width: 768px) 320px, 256px"
             loading="eager"
             fetchPriority="high"
-            className="relative z-10 h-[min(20rem,40svh)] w-auto animate-rise-up [animation-delay:150ms] motion-reduce:animate-none md:h-auto md:w-80 lg:absolute lg:inset-x-0 lg:top-auto lg:bottom-0 lg:mx-auto lg:h-[min(78svh,32rem)] lg:w-auto xl:h-[min(78svh,40rem)] 2xl:h-[min(80svh,42rem)]"
+            className="relative z-10 h-[min(20rem,40svh)] w-auto animate-rise-up [animation-delay:150ms] motion-reduce:animate-none md:h-auto md:w-80 lg:absolute lg:inset-x-0 lg:top-auto lg:bottom-0 lg:mx-auto lg:h-[min(78svh,32rem)] lg:w-auto xl:h-[min(86svh,44rem)] 2xl:h-[min(90svh,50rem)]"
           />
         </div>
 
