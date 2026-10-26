@@ -24,7 +24,7 @@ export function Hero() {
       <div
         className={cn(
           container,
-          'grid flex-grow grid-cols-1 items-center gap-5 py-3 md:gap-8 md:py-6 lg:grid-cols-3 lg:gap-0 lg:py-0'
+          'grid flex-grow grid-cols-1 items-center gap-5 py-3 md:gap-8 md:py-6 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.35fr)_minmax(0,0.9fr)] lg:gap-0 lg:py-0'
         )}
       >
         <div className="z-20 order-2 flex animate-fade-up justify-center text-center [animation-delay:400ms] motion-reduce:animate-none lg:order-none lg:col-start-3 lg:row-start-1 lg:justify-start lg:pl-8 lg:text-left">
@@ -49,7 +49,7 @@ export function Hero() {
             sizes="(min-width: 1280px) 512px, (min-width: 1024px) 360px, (min-width: 768px) 320px, 256px"
             loading="eager"
             fetchPriority="high"
-            className="relative z-10 h-[min(20rem,40svh)] w-auto animate-rise-up [animation-delay:150ms] motion-reduce:animate-none md:h-auto md:w-80 lg:absolute lg:inset-x-0 lg:bottom-0 lg:mx-auto lg:h-[min(80svh,28rem)] lg:w-auto xl:h-[min(80svh,40rem)]"
+            className="relative z-10 h-[min(20rem,40svh)] w-auto animate-rise-up [animation-delay:150ms] motion-reduce:animate-none md:h-auto md:w-80 lg:absolute lg:inset-x-0 lg:top-1/2 lg:-translate-y-1/2 lg:mx-auto lg:h-[min(80svh,30rem)] lg:w-auto xl:h-[min(80svh,42rem)]"
           />
         </div>
 

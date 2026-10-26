@@ -80,8 +80,8 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    id: "moodi",
-    name: "Moodi",
+    id: "privacy-ai",
+    name: "Privacy-First Enterprise AI",
     subtitle: "Privacy-first enterprise AI platform",
     status: "Internal enterprise project · source code not public",
     summary:
@@ -134,8 +134,8 @@ export const projects: Project[] = [
     ],
   },
   {
-    id: "iarm-hub",
-    name: "IARM HUB v2",
+    id: "enterprise-data-itsm",
+    name: "Enterprise Data and ITSM Platform",
     subtitle: "Data management, ITSM and compliance platform",
     status: "Internal company platform · source code not public",
     summary:
@@ -175,8 +175,8 @@ export const projects: Project[] = [
     ],
   },
   {
-    id: "phishprep",
-    name: "PhishPrep",
+    id: "security-awareness",
+    name: "Security Awareness Platform",
     subtitle: "Phishing simulation and security awareness",
     status: "Company product",
     summary:
@@ -184,14 +184,14 @@ export const projects: Project[] = [
     problem:
       "Organizations need to measure how susceptible their employees are to phishing, and follow up with training.",
     productNote:
-      "PhishPrep is a company product. This card describes only my part in it.",
+      "This is a company product. This card describes only my contribution.",
     contribution: [
       "Helped build PACT (Phishing Awareness Campaign Training), which automates follow-up training for employees who click simulated phishing emails, using Microsoft Graph API and SMTP.",
       "Contributed to the sign-in experience.",
       "Contributed to simulation UI concepts for email, SMS, voice, Microsoft Teams, QR-code, and deepfake scenarios.",
     ],
     stack: ["Microsoft Graph API", "SMTP", "Email automation"],
-    link: { label: "Visit phishprep.com", href: "https://phishprep.com/" },
+    link: { label: "Visit the company website", href: "https://phishprep.com/" },
   },
 ];
 
