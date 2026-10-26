@@ -16,7 +16,7 @@ export function Section({ id, label, title, children, className }: SectionProps)
       aria-labelledby={`${id}-title`}
       className={cn('border-t border-border py-20 md:py-28', className)}
     >
-      <div className={container}>
+      <div className={container} data-scroll-reveal>
         <header className="mb-12 max-w-2xl">
           <p className="mb-3 flex items-center gap-2 font-mono text-xs uppercase tracking-widest text-muted-foreground">
             <span aria-hidden="true" className="h-2 w-2 bg-yellow-400" />

@@ -96,3 +96,18 @@
     transition: background-color 0.3s ease, color 0.3s ease;
   }
 }
+
+@media (prefers-reduced-motion: no-preference) {
+  html[data-scroll-reveal-ready="true"] [data-scroll-reveal] {
+    opacity: 0;
+    transform: translateY(1.5rem);
+    transition:
+      opacity 650ms ease,
+      transform 650ms cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  html[data-scroll-reveal-ready="true"] [data-scroll-reveal].scroll-reveal-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

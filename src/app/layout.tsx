@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
+import { ScrollReveal } from "@/components/site/scroll-reveal";
 import { site } from "@/lib/portfolio";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter", display: "swap" });
@@ -70,6 +71,7 @@ export default function RootLayout({
           enableSystem={false}
           disableTransitionOnChange={false}
         >
+          <ScrollReveal />
           <a
             href="#main"
             className="sr-only rounded-md bg-foreground px-4 py-2 text-sm font-medium text-background focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50"

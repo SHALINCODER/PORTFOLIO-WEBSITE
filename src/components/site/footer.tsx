@@ -10,6 +10,7 @@ export function Footer() {
           container,
           'flex flex-col gap-6 py-10 md:flex-row md:items-center md:justify-between'
         )}
+        data-scroll-reveal
       >
         <div>
           <p className="font-semibold tracking-tight">{site.name}</p>
