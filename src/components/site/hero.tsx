@@ -13,7 +13,7 @@ export function Hero() {
     <section
       id="home"
       aria-labelledby="hero-heading"
-      className="relative flex min-h-[calc(100svh-4rem)] w-full flex-col items-center justify-between overflow-hidden pb-6 pt-5 md:pb-10 md:pt-8"
+      className="relative flex min-h-[calc(100svh-4rem)] w-full flex-col items-center justify-between overflow-x-clip pb-6 pt-5 md:pb-10 md:pt-8"
     >
       {/*
         Layout: stacked below lg; three columns from lg. From lg up the portrait is positioned
