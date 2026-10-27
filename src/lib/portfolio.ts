@@ -10,8 +10,8 @@ export const site = {
   email: "shalinsunil1@gmail.com",
   github: "https://github.com/shalincoder",
   linkedin: "https://www.linkedin.com/in/shalin-sunil-kumar-395491264/",
-  resume: "/Shalin_Sunil_Kumar_Resume.pdf",
-  resumeFileName: "Shalin_Sunil_Kumar_Resume.pdf",
+  resume: "/SHALIN_S_K_RESUME.pdf",
+  resumeFileName: "SHALIN_S_K_RESUME.pdf",
   portrait: "/SHALIN_S_K_IMAGE.png",
   tagline:
     "I build enterprise web applications, backend systems, and privacy-focused AI products.",
