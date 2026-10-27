@@ -16,36 +16,35 @@ function ProjectCard({ project }: { project: Project }) {
       className="rounded-lg border border-border bg-card p-6 md:p-8"
     >
       <div className="grid gap-8 lg:grid-cols-12">
-        <div className="lg:col-span-4">
-          <h3
-            id={`${project.id}-name`}
-            className="text-2xl font-bold tracking-tight"
-          >
-            {project.name}
-          </h3>
+        <h3
+          id={`${project.id}-name`}
+          className="text-2xl font-bold tracking-tight lg:col-span-4"
+        >
+          {project.name}
+        </h3>
 
-          <div className="mt-5">
-            <Label>Technologies</Label>
-            <ul aria-label={`${project.name} technologies`} className="flex flex-wrap gap-2">
-              {project.stack.map((tech) => (
-                <li
-                  key={tech}
-                  className="rounded-md border border-border px-2 py-1 font-mono text-xs"
-                >
-                  {tech}
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
-
-        <div className="lg:col-span-8">
+        <div className="space-y-4 lg:col-span-8">
+          <p className="leading-relaxed">{project.overview}</p>
           <ul className="list-disc space-y-3 pl-5 leading-relaxed marker:text-muted-foreground">
-            {project.highlights.map((item) => (
+            {project.details.map((item) => (
               <li key={item}>{item}</li>
             ))}
           </ul>
         </div>
+      </div>
+
+      <div className="mt-8 border-t border-border pt-5">
+        <Label>Technologies used</Label>
+        <dl className="grid gap-x-8 gap-y-4 sm:grid-cols-2 xl:grid-cols-3">
+          {project.technologies.map(({ category, items }) => (
+            <div key={category}>
+              <dt className="font-mono text-xs uppercase tracking-wider text-muted-foreground">
+                {category}
+              </dt>
+              <dd className="mt-1 text-sm leading-relaxed">{items.join(', ')}</dd>
+            </div>
+          ))}
+        </dl>
       </div>
     </article>
   );

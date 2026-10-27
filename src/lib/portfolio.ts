@@ -65,83 +65,91 @@ export const socialLinks: {
 export type Project = {
   id: string;
   name: string;
-  stack: string[];
-  highlights: string[];
+  overview: string;
+  details: string[];
+  technologies: { category: string; items: string[] }[];
 };
 
 export const projects: Project[] = [
   {
     id: "ai-research-workspace",
     name: "AI Research and Productivity Workspace",
-    stack: [
-      "React",
-      "TypeScript",
-      "Next.js",
-      "Tailwind CSS",
-      "FastAPI",
-      "PostgreSQL",
-      "SQLAlchemy",
-      "Alembic",
-      "Docker",
+    overview:
+      "An AI-assisted research workspace that lets users choose an AI provider, keep conversations searchable, and export responses for later use.",
+    details: [
+      "Connects to OpenAI API, Ollama, and OpenRouter so providers can be configured for different research workflows.",
+      "Uses REST APIs and PostgreSQL persistence to support conversation history and searchable records, with SQLAlchemy and Alembic for data access and schema migrations.",
+      "Checks text for sensitive information with Microsoft Presidio and spaCy, and uses PaddleOCR to extract text from documents and images.",
+      "Packages the application and its services for deployment with Docker and Docker Compose.",
     ],
-    highlights: [
-      "Build an AI research workspace with configurable providers, searchable conversation history, and exportable responses using OpenAI API, Ollama, and OpenRouter.",
-      "Integrate REST APIs and PostgreSQL persistence with sensitive-data detection using Microsoft Presidio and spaCy, plus OCR text extraction using PaddleOCR.",
+    technologies: [
+      { category: "Frontend", items: ["React", "Next.js", "TypeScript", "Tailwind CSS"] },
+      { category: "Backend", items: ["Python", "FastAPI", "REST APIs"] },
+      { category: "Database", items: ["PostgreSQL"] },
+      { category: "ORM & migrations", items: ["SQLAlchemy", "Alembic"] },
+      { category: "AI integration", items: ["OpenAI API", "Ollama", "OpenRouter"] },
+      { category: "Privacy & NLP", items: ["Microsoft Presidio", "spaCy"] },
+      { category: "OCR", items: ["PaddleOCR"] },
+      { category: "DevOps", items: ["Docker", "Docker Compose"] },
     ],
   },
   {
     id: "cloud-asset-inventory",
     name: "Cloud Infrastructure and Asset Inventory Platform",
-    stack: [
-      "Python",
-      "FastAPI",
-      "MySQL",
-      "SQLAlchemy",
-      "Alembic",
-      "JWT",
-      "Docker",
+    overview:
+      "An inventory platform for keeping track of cloud resources, servers, software licenses, ownership, configuration changes, and resource lifecycles.",
+    details: [
+      "Provides REST APIs backed by normalized MySQL models, with SQLAlchemy for data access and Alembic for schema migrations.",
+      "Uses JWT authentication and role-based access control to manage permissions, with audit logs for tracking inventory changes.",
+      "Supports inventory search and scheduled reports, with input validation, automated API testing, and Docker-based deployment.",
     ],
-    highlights: [
-      "Develop an inventory system for tracking cloud resources, servers, software licenses, ownership, configuration changes, and resource lifecycles.",
-      "Implement REST APIs, normalized MySQL models, JWT authentication, role-based permissions, audit logs, inventory search, and scheduled reports.",
-      "Add data validation, schema migrations with Alembic, automated API tests, and Docker-based deployment.",
+    technologies: [
+      { category: "Language", items: ["Python"] },
+      { category: "Backend", items: ["FastAPI", "REST APIs"] },
+      { category: "Database", items: ["MySQL"] },
+      { category: "ORM & migrations", items: ["SQLAlchemy", "Alembic"] },
+      { category: "Authentication", items: ["JWT", "Role-based access control"] },
+      { category: "DevOps", items: ["Docker"] },
+      { category: "Testing", items: ["Automated API testing"] },
     ],
   },
   {
     id: "event-registration-notifications",
     name: "Event Registration and Notification Platform",
-    stack: [
-      "JavaScript",
-      "React",
-      "Node.js",
-      "Express.js",
-      "PostgreSQL",
-      "REST APIs",
-      "Microsoft Graph API",
-      "SMTP",
+    overview:
+      "An event scheduling and registration platform for managing attendees, event capacity, registration status, and event reports.",
+    details: [
+      "Stores event and attendee records in PostgreSQL and exposes scheduling and registration workflows through REST APIs.",
+      "Sends confirmation emails and reminders through Microsoft Graph API and SMTP, while preventing duplicate notifications and recording delivery logs.",
+      "Adds input validation, automated tests, and Docker-based containerized deployment.",
     ],
-    highlights: [
-      "Build event scheduling and registration with attendee records, capacity limits, registration status, and reports.",
-      "Develop REST APIs and PostgreSQL data models; automate confirmation emails and reminders using Microsoft Graph API and SMTP.",
-      "Add input validation, duplicate-notification prevention, delivery logs, automated tests, and containerized deployment.",
+    technologies: [
+      { category: "Frontend", items: ["React", "JavaScript"] },
+      { category: "Backend", items: ["Node.js", "Express.js"] },
+      { category: "Database", items: ["PostgreSQL"] },
+      { category: "API", items: ["REST APIs"] },
+      { category: "Email integration", items: ["Microsoft Graph API", "SMTP"] },
+      { category: "Deployment", items: ["Docker"] },
+      { category: "Testing", items: ["Automated testing"] },
     ],
   },
   {
     id: "project-quality-dashboard",
     name: "Developer Project Quality Dashboard",
-    stack: [
-      "React",
-      "TypeScript",
-      "Node.js",
-      "Express.js",
-      "PostgreSQL",
-      "Playwright",
-      "GitHub Actions",
+    overview:
+      "A cross-repository dashboard that brings build status, automated test results, deployment history, and development activity into one view.",
+    details: [
+      "Provides REST APIs and PostgreSQL data models for build records, test summaries, project settings, and historical metrics.",
+      "Presents project health through interactive status charts and filters, with report exports for sharing results.",
+      "Uses Playwright for end-to-end testing and GitHub Actions workflows for continuous integration.",
     ],
-    highlights: [
-      "Develop a dashboard to track project build status, automated test results, deployment history, and development activity across repositories.",
-      "Create REST APIs and PostgreSQL data models for build records, test summaries, project settings, and historical metrics.",
-      "Add interactive status charts, filtering, report exports, Playwright end-to-end tests, and GitHub Actions workflows for continuous integration.",
+    technologies: [
+      { category: "Frontend", items: ["React", "TypeScript"] },
+      { category: "Backend", items: ["Node.js", "Express.js"] },
+      { category: "Database", items: ["PostgreSQL"] },
+      { category: "API", items: ["REST APIs"] },
+      { category: "End-to-end testing", items: ["Playwright"] },
+      { category: "CI/CD", items: ["GitHub Actions"] },
     ],
   },
 ];
